@@ -1,5 +1,5 @@
 # Hourly scraping
-name: nifty50scrape
+name: sitemap_scraping
 
 # Controls when the action will run.
 on:
@@ -24,7 +24,7 @@ jobs:
         R -e 'install.packages("rvest")'
     # Run R script
     - name: Scrape
-      run: Rscript nifty50_scraping.R
+      run: Rscript sitemap_scraping.R
       
  # Add new files in data folder, commit along with other modified files, push
     - name: Commit files
