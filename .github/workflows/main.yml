@@ -4,13 +4,13 @@ name: sitemap_scraping
 # Controls when the action will run.
 on:
   schedule:
-    - cron:  '40 9 * * *'
+    - cron:  '48,52,54 9 * * *'
 
 
 jobs: 
   autoscrape:
     # The type of runner that the job will run on
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     # Load repo and install R
     steps:
