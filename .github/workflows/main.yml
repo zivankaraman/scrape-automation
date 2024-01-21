@@ -4,8 +4,8 @@ name: sitemap_scraping
 # Controls when the action will run.
 on:
   schedule:
-    - cron:  '48,52,54 9 * * *'
-
+    - cron:  '45 10 * * *'
+  workflow_dispatch: # adding the workflow_dispatch so it can be triggered manually
 
 jobs: 
   autoscrape:
