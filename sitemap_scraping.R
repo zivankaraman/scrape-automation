@@ -2,5 +2,6 @@
 library(jsonlite)
 
 row <- mtcars
-
-write.csv(row, paste0('data/xml_url_count.csv'), append = TRUE)
+row$now <- Sys.time()
+write.csv(row, paste0('data/xml_url_count.csv'))
+stop("bad luck")
